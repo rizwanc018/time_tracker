@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Tracker</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css">
+  <title>Time Tracker</title>
 </head>
-
 <body>
-    Time Tracker
-</body>
 
+  <header>
+    <div class="logo">time<span>tracker</span></div>
+    <div class="live-badge">● LIVE</div>
+  </header>
+
+  <!-- Currently active site -->
+  <div class="current-card">
+    <div class="current-label">current site</div>
+    <div class="current-hostname" id="currentHost">—</div>
+    <div class="current-time" id="currentTime">0m 0s</div>
+  </div>
+
+  <!-- All sites today -->
+  <div class="section-title">today's activity</div>
+  <div class="site-list" id="siteList">
+    <div class="empty">No data yet. Start browsing!</div>
+  </div>
+
+  <footer>
+    <button class="reset-btn" id="resetBtn">Reset Today</button>
+    <div>
+      <span class="total-label">total: </span>
+      <span class="total-time" id="totalTime">0m</span>
+    </div>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
 </html>
