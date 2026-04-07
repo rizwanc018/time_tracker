@@ -50,17 +50,6 @@
         color: var(--text);
     }
 
-    .live-badge {
-        font-size: 10px;
-        background: var(--badge-bg);
-        color: var(--badge-text);
-        padding: 2px 8px;
-        border-radius: 20px;
-        font-weight: 500;
-        animation: pulse 2s infinite;
-        box-shadow: 0 0 8px rgba(74, 144, 232, 0.5);
-    }
-
     @keyframes pulse {
 
         0%,
@@ -79,7 +68,6 @@
     .current-card {
         background: var(--surface);
         border: 1px solid var(--border);
-        border-left: 3px solid var(--accent);
         border-radius: 10px;
         padding: 14px 16px;
         margin-bottom: 16px;
